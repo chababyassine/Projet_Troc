@@ -2,4 +2,7 @@ body {
     background-color: rgb(161, 161, 161);
 }
 
-
+.btnVoir {
+    display: flex;
+    justify-content: center;
+}
