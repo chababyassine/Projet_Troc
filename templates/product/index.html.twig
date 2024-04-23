@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'base2.html.twig' %}
 
 
 {% block title %}Produit 1| Troc'Yah
@@ -28,12 +28,12 @@
 						<div class="span6">
 							<h3>{{card.nameArticle}}
 							</h3>
-							<small>- info descriptive de l'article de TROC</small>
+							<small>{{card.city}}</small>
 							<hr class="soft"/>
 							<form class="form-horizontal qtyFrm">
 								<div class="control-group">
 									<nav class="container d-flex justify-content-between mt-2">
-										<a href="#" class="btn btn-primary ">Modifier la card</a>
+										<a href="{{path('product_update', {'id': card.id})}}" class="btn btn-primary ">Modifier la card</a>
 										<a href="#" class="btn btn-danger">Supprimer</a>
 									</nav>
 								</div>

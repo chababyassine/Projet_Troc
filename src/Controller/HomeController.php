@@ -24,16 +24,6 @@ class HomeController extends AbstractController {
         ]);
     }
 
-    #[Route('/', name: 'app_home')]
-    public function components(EntityManagerInterface $manager, CardsHomeRepository $repoEntity): Response
-    {
-
-        $repoEntity = $manager->getRepository(CardsHome::class);
-        $bdd = $repoEntity->findAll();
-
-        return $this->render('home/index.html.twig', [
-            'cards' => $bdd
-        ]);
-    }
+    
 }
 

@@ -1,0 +1,19 @@
+{% extends 'base2.html.twig' %}
+
+
+{% block title %}Modification Article | Troc'Yah
+{% endblock %}
+
+{% block body %}
+	<nav class="container d-flex justify-content-center mt-2">
+        <a href="{{ path('app_home') }}" class="btn btn-primary">Accueil</a>
+    </nav>
+    <div class="container mt-5">
+        <h1>MODIFICATION CARD</h1>
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <button type="submit" class="btn btn-primary">Modifier</button>
+        {{ form_end(form) }}
+    </div>
+
+{% endblock %}
