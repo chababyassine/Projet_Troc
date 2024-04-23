@@ -74,23 +74,18 @@
 	<div id="mainBody">
 		<div class="container">
 			<div class="row">
-				{# ! La side bar est partiellement commentée (Voir Yassine pour DEL) #}
+				{# ! Side bar à lier sur les liens de redirection #}
 				<!-- Sidebar ================================================== -->
 				<div id="sidebar" class="span3">
-					{# <div class="well well-small">
-						<a id="myCart" href="product_summary.html"><img src="themes/images/ico-cart.png" alt="cart">3 Items in your cart
-							<span class="badge badge-warning pull-right">$155.00</span>
-						</a>
-					</div> #}
 					<ul id="sideManu" class="nav nav-tabs nav-stacked">
 						{# ! Sous Menu SERVICES #}
 						<li class="subMenu open">
 							<a>
 								SERVICES ET BIENS [32]</a>
 							<ul>
-								<li><a class="active" href="{{path('app_product')}}"><i class="icon-chevron-right"></i>Aides à la Personne (100)</a></li>
-								<li><a href="{{path('app_product')}}"><i class="icon-chevron-right"></i>Annonces diverses (30)</a></li>
-								<li><a href="{{path('app_product')}}"><i class="icon-chevron-right"></i>Livres & Administratifs (80)</a></li>
+								<li><a class="active" href="#"><i class="icon-chevron-right"></i>Aides à la Personne (100)</a></li>
+								<li><a href="#"><i class="icon-chevron-right"></i>Annonces diverses (30)</a></li>
+								<li><a href="#"><i class="icon-chevron-right"></i>Livres & Administratifs (80)</a></li>
 							</ul>
 						</li>
 						{# ! Sous Menu TEXTILES #}
@@ -100,31 +95,31 @@
 							</a>
 							<ul style="display:none">
 								<li>
-									<a href="{{path('app_product')}}">
+									<a href="#">
 										<i class="icon-chevron-right"></i>VÊTEMENTS FEMMES (45)</a>
 								</li>
 								<li>
-									<a href="{{path('app_product')}}">
+									<a href="#">
 										<i class="icon-chevron-right"></i>CHAUSSURES FEMMES (8)</a>
 								</li>
 								<li>
-									<a href="{{path('app_product')}}">
+									<a href="#">
 										<i class="icon-chevron-right"></i>ACCESSOIRES FEMMES (5)</a>
 								</li>
 								<li>
-									<a href="{{path('app_product')}}">
+									<a href="#">
 										<i class="icon-chevron-right"></i>VÊTEMENTS HOMMES  (45)</a>
 								</li>
 								<li>
-									<a href="{{path('app_product')}}">
+									<a href="#">
 										<i class="icon-chevron-right"></i>CHAUSSURES HOMMES (6)</a>
 								</li>
 								<li>
-									<a href="{{path('app_product')}}">
+									<a href="#">
 										<i class="icon-chevron-right"></i>VÊTEMENT ENFANTS (5)</a>
 								</li>
 								<li>
-									<a href="{{path('app_product')}}">
+									<a href="#">
 										<i class="icon-chevron-right"></i>CHAUSSURES ENFANTS (3)</a>
 								</li>
 							</ul>
@@ -134,408 +129,112 @@
 							<a>ALIMENTATION ET BOISSONS [35]</a>
 							<ul style="display:none">
 								<li>
-									<a href="{{path('app_product')}}">
+									<a href="#">
 										<i class="icon-chevron-right"></i>Eau Bouteille Pack (15)</a>
 								</li>
 								<li>
-									<a href="{{path('app_product')}}">
+									<a href="#">
 										<i class="icon-chevron-right"></i>Fruits(8)</a>
 								</li>
 								<li>
-									<a href="{{path('app_product')}}">
+									<a href="#">
 										<i class="icon-chevron-right"></i>Légumes (5)</a>
 								</li>
 								<li>
-									<a href="{{path('app_product')}}">
+									<a href="#">
 										<i class="icon-chevron-right"></i>Riz thaï (2)</a>
 								</li>
 								<li>
-									<a href="{{path('app_product')}}">
+									<a href="#">
 										<i class="icon-chevron-right"></i>BIB Wine (Bag in Box) (5)</a>
 								</li>
 							</ul>
 						</li>
-						{# <li>
-							<a href="products.html">HEALTH & BEAUTY [18]</a>
-						</li>
-						<li>
-							<a href="products.html">SPORTS & LEISURE [58]</a>
-						</li>
-						<li>
-							<a href="products.html">BOOKS & ENTERTAINMENTS [14]</a>
-						</li> #}
 					</ul>
 					<br/>
-					{# <div class="thumbnail">
-						<img src="themes/images/products/panasonic.jpg" alt="Bootshop panasonoc New camera"/>
-						<div class="caption">
-							<h5>Panasonic</h5>
-							<h4 style="text-align:center">
-								<a class="btn" href="{{('app_product')}}">
-									<i class="icon-zoom-in"></i>
-								</a>
-								<a class="btn" href="#">Add to
-									<i class="icon-shopping-cart"></i>
-								</a>
-								<a class="btn btn-primary" href="#">$222.00</a>
-							</h4>
-						</div>
-					</div><br/> #}
-					{# <div class="thumbnail">
-						<img src="themes/images/products/kindle.png" title="Bootshop New Kindel" alt="Bootshop Kindel">
-						<div class="caption">
-							<h5>Kindle</h5>
-							<h4 style="text-align:center">
-								<a class="btn" href="{{('app_product')}}">
-									<i class="icon-zoom-in"></i>
-								</a>
-								<a class="btn" href="#">Add to
-									<i class="icon-shopping-cart"></i>
-								</a>
-								<a class="btn btn-primary" href="#">$222.00</a>
-							</h4>
-						</div>
-					</div><br/> #}
-					{# <div class="thumbnail">
-						<img src="themes/images/payment_methods.png" title="Bootshop Payment Methods" alt="Payments Methods">
-						<div class="caption">
-							<h5>Payment Methods</h5>
-						</div>
-					</div> #}
 				</div>
 				<!-- Sidebar end=============================================== -->
+				
+				{# ! Span relié à la BDD, Hydratation OK des 2  #}
+				<!-- Span start ================================================== -->
 				<div class="span9">
 					<div class="well well-small">
 						<h4>Nouveau "TROC" ajouté
-							<small class="pull-right">50 nouveautés de produits</small>
+							<small class="pull-right">Les 16 nouveaux trocs</small>
 						</h4>
 						<div class="row-fluid">
 							<div id="featured" class="carousel slide">
 								<div class="carousel-inner">
-									<div class="item active">
-										<ul class="thumbnails">
-											<li class="span3">
-												<div class="thumbnail">
-													<i class="tag"></i>
-													<a href="{{path('app_product')}}"><img src="themes/images/products/b1.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<i class="tag"></i>
-													<a href="{{path('app_product')}}"><img src="themes/images/products/b2.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<i class="tag"></i>
-													<a href="{{path('app_product')}}"><img src="themes/images/products/b3.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<i class="tag"></i>
-													<a href="{{path('app_product')}}"><img src="themes/images/products/b4.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</div>
-									<div class="item">
-										<ul class="thumbnails">
-											<li class="span3">
-												<div class="thumbnail">
-													<i class="tag"></i>
-													<a href="{{path('app_product')}}"><img src="themes/images/products/5.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<i class="tag"></i>
-													<a href="{{path('app_product')}}"><img src="themes/images/products/6.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<a href="{{path('app_product')}}"><img src="themes/images/products/7.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<a href="{{path('app_product')}}"><img src="themes/images/products/8.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</div>
-									<div class="item">
-										<ul class="thumbnails">
-											<li class="span3">
-												<div class="thumbnail">
-													<a href="{{path('app_product')}}"><img src="themes/images/products/9.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<a href="{{path('app_product')}}"><img src="themes/images/products/10.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<a href="{{path('app_product')}}"><img src="themes/images/products/11.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<a href="{{path('app_product')}}"><img src="themes/images/products/1.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</div>
-									<div class="item">
-										<ul class="thumbnails">
-											<li class="span3">
-												<div class="thumbnail">
-													<a href="{{path('app_product')}}"><img src="themes/images/products/2.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<a href="{{path('app_product')}}"><img src="themes/images/products/3.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<a href="{{path('app_product')}}"><img src="themes/images/products/4.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-											<li class="span3">
-												<div class="thumbnail">
-													<a href="{{path('app_product')}}"><img src="themes/images/products/5.jpg" alt=""></a>
-													<div class="caption">
-														<h5>Produit ou article XXX</h5>
-														<h4>
-															<a class="btn btnVoir" href="{{path('app_product')}}">VOIR</a>
-														</h4>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</div>
+								{# ! Pour gérer le caroussel span inner, on prépare une présentation par groupe de 4 cards #}
+									{# * Déclaration Total des cartes en BDD avec le filtre TWIG 'length' pour compter les éléments du tableau cards #}
+									{% set totalCards = cards|length %}
+									{# * Compteur à 0 pour suivre le nombre de cartes traitées dans la boucle #}
+									{% set counter = 0 %}
+									{# * Boucle FOR pour traiter une carte une par une, présentes dans le tableau cards. #}
+									{% for card in cards %}
+										{# ! condition vrai quand le compteur modulo 4 est NUL #}
+										{# * Signifie que tous les 4 cartes, on regroupe les prochaines si existantes #}
+										{% if counter % 4 == 0 %}
+											{# ! COMPTEUR = 0, ALORS le groupe est classé 'active' donc affiché au slider #}
+											<div class="item{% if counter == 0 %} active{% endif %}">
+												<ul class="thumbnails">
+										{% endif %}
+													<li class="span3">
+														<div class="thumbnail">
+															<a href="{{ path('app_product', {'id': card.id}) }}"><img src="{{ card.imageUrl }}" alt="image alternative de troc"></a>
+															<div class="caption">
+																<h5>{{ card.nameArticle }}</h5>
+																<p>{{ card.city }}</p>
+																<h4><a class="btn btnVoir" href="{{ path('app_product', {'id': card.id}) }}">CONSULTER</a></h4>
+															</div>
+														</div>
+													</li>
+										{# * on incrémente le compteur afin de poursuivre le traitement de toute BDD #}
+										{% set counter = counter + 1 %}
+										{# ! condition de fermeture des div 'item' ou 'item active' #}
+										{% if counter % 4 == 0 or counter == totalCards %}
+												</ul>
+											</div> <!-- Ferme item -->
+										{% endif %}
+									{% endfor %}
 								</div>
 								<a class="left carousel-control" href="#featured" data-slide="prev">‹</a>
 								<a class="right carousel-control" href="#featured" data-slide="next">›</a>
 							</div>
 						</div>
 					</div>
-					<h4>Les services et biens échangés
+					<h4>Services et biens échangés
 					</h4>
 					<ul class="thumbnails">
-						<li class="span3">
-							<div class="thumbnail">
-								<a href="{{path('app_product')}}"><img src="themes/images/products/6.jpg" alt=""/></a>
-								<div class="caption">
-									<h5>Produit ou article XXX</h5>
-									<p>
-										Lorem Ipsum is simply dummy text.
-									</p>
-									<h4 style="text-align:center">
-										<a class="btn" href="{{path('app_product')}}">
-											<i class="icon-zoom-in"></i>
-										</a>
-										<a class="btn" href="#">TROQU'YEAH
-											<i class="icon-shopping-cart"></i>
-										</a>
-									</h4>
-								</div>
-							</div>
-						</li>
-						<li class="span3">
-							<div class="thumbnail">
-								<a href="{{path('app_product')}}"><img src="themes/images/products/7.jpg" alt=""/></a>
-								<div class="caption">
-									<h5>Produit ou article XXX</h5>
-									<p>
-										Lorem Ipsum is simply dummy text.
-									</p>
-									<h4 style="text-align:center">
-										<a class="btn" href="{{path('app_product')}}">
-											<i class="icon-zoom-in"></i>
-										</a>
-										<a class="btn" href="#">TROQU'YEAH
-											<i class="icon-shopping-cart"></i>
-										</a>
-									</h4>
-								</div>
-							</div>
-						</li>
-						<li class="span3">
-							<div class="thumbnail">
-								<a href="{{path('app_product')}}"><img src="themes/images/products/8.jpg" alt=""/></a>
-								<div class="caption">
-									<h5>Produit ou article XXX</h5>
-									<p>
-										Lorem Ipsum is simply dummy text.
-									</p>
-									<h4 style="text-align:center">
-										<a class="btn" href="{{path('app_product')}}">
-											<i class="icon-zoom-in"></i>
-										</a>
-										<a class="btn" href="#">TROQU'YEAH
-											<i class="icon-shopping-cart"></i>
-										</a>
-									</h4>
-								</div>
-							</div>
-						</li>
-						<li class="span3">
-							<div class="thumbnail">
-								<a href="{{path('app_product')}}"><img src="themes/images/products/9.jpg" alt=""/></a>
-								<div class="caption">
-									<h5>Produit ou article XXX</h5>
-									<p>
-										Lorem Ipsum is simply dummy text.
-									</p>
-									<h4 style="text-align:center">
-										<a class="btn" href="{{path('app_product')}}">
-											<i class="icon-zoom-in"></i>
-										</a>
-										<a class="btn" href="#">TROQU'YEAH
-											<i class="icon-shopping-cart"></i>
-										</a>
-									</h4>
-								</div>
-							</div>
-						</li>
-						<li class="span3">
-							<div class="thumbnail">
-								<a href="{{path('app_product')}}"><img src="themes/images/products/10.jpg" alt=""/></a>
-								<div class="caption">
-									<h5>Produit ou article XXX</h5>
-									<p>
-										Lorem Ipsum is simply dummy text.
-									</p>
-									<h4 style="text-align:center">
-										<a class="btn" href="{{path('app_product')}}">
-											<i class="icon-zoom-in"></i>
-										</a>
-										<a class="btn" href="#">TROQU'YEAH
-											<i class="icon-shopping-cart"></i>
-										</a>
-									</h4>
-								</div>
-							</div>
-						</li>
-						<li class="span3">
-							<div class="thumbnail">
-								<a href="{{path('app_product')}}"><img src="themes/images/products/11.jpg" alt=""/></a>
-								<div class="caption">
-									<h5>Produit ou article XXX</h5>
-									<p>
-										Lorem Ipsum is simply dummy text.
-									</p>
-									<h4 style="text-align:center">
-										<a class="btn" href="{{path('app_product')}}">
-											<i class="icon-zoom-in"></i>
-										</a>
-										<a class="btn" href="#">TROQU'YEAH
-											<i class="icon-shopping-cart"></i>
-										</a>
-									</h4>
-								</div>
-							</div>
-						</li>
-					</ul>
 
+						{% for card in cards %}
+							<li class="span3">
+								<div class="thumbnail">
+									<a href="{{path('app_product', {'id': card.id})}}"><img src="{{card.imageUrl}}" alt="image d'article de TROC"/></a>
+									<div class="caption">
+										<h5>{{card.nameArticle}}</h5>
+										<p>
+											{{card.info}}
+										</p>
+										<p>
+											{{card.city}}
+										</p>
+										<h4 style="text-align:center">
+											<a class="btn" href="{{path('app_product', {'id': card.id})}}">
+												<i class="icon-zoom-in"></i>
+											</a>
+											<a class="btn" href="#">TROQU'YEAH
+												<i class="icon-shopping-cart"></i>
+											</a>
+										</h4>
+									</div>
+								</div>
+							</li>
+						{% endfor %}
+
+					</ul>
 				</div>
+				<!-- Span end ================================================== -->
 			</div>
 		</div>
 	</div>
